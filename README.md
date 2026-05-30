@@ -22,21 +22,9 @@ A Flutter application built using the Jikan Anime API that allows users to brows
 
 ## Screenshots
 
-### Home Screen
-
-Displays top anime fetched from the Jikan API with pagination support.
-
 ![Home Screen](assets/screenshots/home.png)
 
-### Search Screen
-
-Search anime by title using API-powered search.
-
 ![Search Screen](assets/screenshots/search.png)
-
-### Details Screen
-
-View detailed information about an anime including score, rank, episodes, and synopsis.
 
 ![Details Screen](assets/screenshots/details.png)
 
