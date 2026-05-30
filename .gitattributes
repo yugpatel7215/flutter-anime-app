@@ -1,9 +1,7 @@
-# Auto detect text files and perform LF normalization
-* text=auto
 * text=auto
 
-android/** linguist-vendored
-ios/** linguist-vendored
-linux/** linguist-vendored
-macos/** linguist-vendored
-windows/** linguist-vendored
+android/** linguist-generated=true
+ios/** linguist-generated=true
+linux/** linguist-generated=true
+macos/** linguist-generated=true
+windows/** linguist-generated=true
