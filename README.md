@@ -19,12 +19,23 @@ A Flutter application built using the Jikan Anime API that allows users to brows
 - Riverpod
 - HTTP
 - Jikan API
-
 ## Screenshots
+
+### Home Screen
+
+Browse the highest-rated anime fetched from the Jikan API. The home screen supports infinite scrolling and pagination for a smooth browsing experience.
 
 ![Home Screen](assets/screenshots/home.png)
 
+### Search Functionality
+
+Search anime by title and retrieve real-time results from the Jikan API. Results are fetched dynamically using Riverpod-powered state management.
+
 ![Search Screen](assets/screenshots/search.png)
+
+### Anime Details
+
+View detailed information about a selected anime, including score, rank, episode count, cover artwork, and synopsis.
 
 ![Details Screen](assets/screenshots/details.png)
 
