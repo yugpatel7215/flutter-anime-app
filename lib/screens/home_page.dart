@@ -1,6 +1,6 @@
-import 'package:animelitz/provider/animeprovider.dart';
-import 'package:animelitz/screens/animedetailsScreen.dart';
-import 'package:animelitz/widgets/animecard.dart';
+import 'package:animelitz/providers/anime_provider.dart';
+import 'package:animelitz/screens/anime_details_Screen.dart';
+import 'package:animelitz/widgets/anime_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -36,18 +36,60 @@ class _HomePageState extends ConsumerState<HomePage> {
         ? ref.watch(animeProvider)
         : ref.watch(seachAnimeProvider(query));
     return Scaffold(
-      appBar: AppBar(title: Text('anime world'), centerTitle: true),
+      appBar: AppBar(
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              Icons.movie_filter_rounded,
+              color: Colors.deepPurpleAccent,
+              size: 22,
+            ),
+            SizedBox(width: 8),
+            Text(
+              'anime world',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                letterSpacing: 2.0,
+                color: Colors.white,
+              ),
+            ),
+          ],
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        bottom: PreferredSize(
+          preferredSize: Size.fromHeight(1),
+          child: Container(height: 1, color: Colors.white.withOpacity(0.08)),
+        ),
+      ),
       body: Column(
         children: [
           SizedBox(height: 20),
           SizedBox(
-            width: 250,
+            width: 690,
             child: TextField(
+              style: TextStyle(color: Colors.black),
               decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.white,
+                prefixIcon: Icon(Icons.search, color: Colors.grey),
+                hintText: 'Search anime...',
+                hintStyle: TextStyle(color: Colors.grey),
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(30),
+                  borderSide: BorderSide.none,
                 ),
-                prefixIcon: Icon(Icons.search),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                  borderSide: BorderSide.none,
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                  borderSide: BorderSide(color: Colors.white, width: 2),
+                ),
               ),
               onSubmitted: (value) {
                 final query = value.trim();

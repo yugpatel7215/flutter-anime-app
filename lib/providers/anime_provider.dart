@@ -1,5 +1,5 @@
-import 'package:animelitz/models/animemodel.dart';
-import 'package:animelitz/repository/animerepository.dart';
+import 'package:animelitz/models/anime_model.dart';
+import 'package:animelitz/repository/anime_repository.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/legacy.dart';
 

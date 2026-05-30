@@ -1,5 +1,5 @@
-import 'package:animelitz/models/animemodel.dart';
-import 'package:animelitz/provider/animeprovider.dart';
+import 'package:animelitz/models/anime_model.dart';
+import 'package:animelitz/providers/anime_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:animelitz/widgets/stat_badge.dart';
