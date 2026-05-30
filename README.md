@@ -1,16 +1,95 @@
-# animelitz
+# Flutter Anime App
 
-A new Flutter project.
+A Flutter application built using the Jikan Anime API that allows users to browse top anime, search anime by title, and view detailed anime information.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Top Anime Listing
+- Infinite Scroll Pagination
+- Anime Search
+- Anime Details Screen
+- Riverpod State Management
+- Repository Pattern
+- Clean Folder Structure
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter
+- Dart
+- Riverpod
+- HTTP
+- Jikan API
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+### Home Screen
+
+Displays top anime fetched from the Jikan API with pagination support.
+
+![Home Screen](assets/screenshots/home.png)
+
+### Search Screen
+
+Search anime by title using API-powered search.
+
+![Search Screen](assets/screenshots/search.png)
+
+### Details Screen
+
+View detailed information about an anime including score, rank, episodes, and synopsis.
+
+![Details Screen](assets/screenshots/details.png)
+
+## Folder Structure
+
+text
+lib/
+│
+├── models/
+├── providers/
+├── repository/
+├── screens/
+├── widgets/
+└── main.dart
+
+
+## Architecture
+
+The project follows a simple and scalable architecture using:
+
+- Repository Pattern
+- AsyncNotifierProvider
+- FutureProvider.family
+- StateProvider
+
+## Learning Outcomes
+
+Through this project, I practiced:
+
+- API Integration
+- Pagination
+- Riverpod State Management
+- Search Architecture
+- Navigation
+- Async Programming
+- Clean Code Organization
+
+## API Used
+
+Jikan API
+
+https://api.jikan.moe/
+
+## Future Improvements
+
+- Favorites Feature
+- Offline Caching
+- Better Animations
+- Search Suggestions
+- Theme Switching
+
+## Author
+
+Yug Patel
+
+Computer Science Student | Flutter Developer
